@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <title>Crazy Train Timetable</title>
+    <meta charset="UTF-8">
+    <!-- Meyerweb Reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Javascript -->
+    <script src="./assets/javascript/javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="title">
+                    <h1>Crazy Train Timetable</h1>
+                </div>
+                <br>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">Train Schedule</div>
+                    <div class="panel-body">
+                        <table class="table table-striped" id="train-table">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">Add a Train</div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Train Name</label>
+                                <input type="name" class="form-control" id="name" placeholder="Enter train name">
+                            </div>
+                            <div class="form-group">
+                                <label for="des">Destination</label>
+                                <input type="des" class="form-control" id="des" placeholder="Enter Destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstTrain">First Train Time( HH:mm - military time)</label>
+                                <input type="firstTrain" class="form-control" id="firstTrain" placeholder="Enter 24 Hour Time">
+                            </div>
+                            <div class="form-group">
+                                <label for="fre">Frequency (min)</label>
+                                <input type="fre" class="form-control" id="fre" placeholder="Enter Minutes">
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+	<!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- moment -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- AJAX  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/af.js"></script>
+   
+</body>
+</html>
